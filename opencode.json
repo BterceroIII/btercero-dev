@@ -1,0 +1,34 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "skills": {
+    "paths": [
+      ".opencode/skills"
+    ]
+  },
+  "mcp": {
+    "context7": {
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp",
+      "enabled": true
+    },
+    "shadcn": {
+      "type": "local",
+      "command": [
+        "npx",
+        "shadcn@latest",
+        "mcp"
+      ],
+      "enabled": true
+    },
+    "filesystem": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/home/btercero/projects/btercero-dev"
+      ],
+      "enabled": true
+    }
+  }
+}
